@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="verification" content="bacb74fbd2092e56d140909d788b3e11" />
 
-  <title>DogDNA.bio – Best Dog DNA Tests (Breed, Health & Traits, 2025)</title>
+  <title>PetDNA.bio – Pet DNA Tests (Dogs & Cats) Guide (2025)</title>
   <meta name="description"
-        content="DogDNA.bio helps you choose the right dog DNA test in 2025. Compare breed identification, health screening, trait reports, and value – with a clear, evidence-led approach." />
+        content="PetDNA.bio is an evidence-led guide to pet DNA tests in 2025. Compare dog and cat DNA testing: breed, health screening, traits, and what results actually mean." />
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://dogdna.bio/" />
+  <link rel="canonical" href="https://petdna.bio/" />
 
   <link rel="stylesheet" href="/styles.css" />
 
@@ -30,6 +30,9 @@
     .consent-header{ padding:18px 18px 0 18px; }
     .consent-title{ margin:0; font-size:1.1rem; letter-spacing:.01em; }
     .consent-body{ padding:14px 18px 18px 18px; line-height:1.55; color:#cbd5e1; font-size:.95rem; }
+    .consent-body p{ margin:10px 0; }
+    .consent-list{ margin:12px 0 0 0; padding-left:18px; }
+    .consent-list li{ margin:6px 0; }
     .consent-actions{
       display:flex; gap:10px; flex-wrap:wrap; padding:16px 18px 18px 18px;
       background:rgba(2,6,23,.5); border-top:1px solid rgba(148,163,184,.14);
@@ -43,9 +46,6 @@
     .consent-links{ margin-left:auto; display:flex; gap:12px; align-items:center; flex-wrap:wrap; font-size:.85rem; color:#94a3b8; }
     .consent-links a{ color:#93c5fd; text-decoration:none; }
     .consent-links a:hover{ text-decoration:underline; }
-
-    /* Small helper: make CTA buttons full width inside table buy-col (if you reuse) */
-    .buy-col .btn-primary { display:block; width:100%; text-align:center; }
   </style>
 
   <script>
@@ -79,6 +79,7 @@
         gtag("js", new Date());
         gtag("config", GA_ID, { anonymize_ip: true });
       }
+
       function setConsent(v){ localStorage.setItem(CONSENT_KEY, v); }
       function getConsent(){ return localStorage.getItem(CONSENT_KEY); }
       function clearConsent(){ localStorage.removeItem(CONSENT_KEY); }
@@ -116,8 +117,9 @@
   {
     "@context":"https://schema.org",
     "@type":"WebSite",
-    "name":"DogDNA.bio",
-    "url":"https://dogdna.bio/",
+    "name":"PetDNA.bio",
+    "url":"https://petdna.bio/",
+    "description":"Independent, evidence-led guide to pet DNA tests for dogs and cats.",
     "publisher":{
       "@type":"Organization",
       "name":"ronarn",
@@ -136,7 +138,7 @@
       </div>
       <div class="consent-body">
         <p>
-          DogDNA.bio uses <strong>analytics</strong> to understand what people search for and which pages help.
+          PetDNA.bio uses <strong>analytics</strong> to understand which topics are useful and which pages need improvement.
           We only load Google Analytics after you accept.
         </p>
         <ul class="consent-list">
@@ -164,9 +166,9 @@
     <!-- HEADER -->
     <header>
       <div class="brand">
-        <div class="brand-name">DogDNA.bio</div>
+        <div class="brand-name">PetDNA.bio</div>
         <div class="brand-tagline">
-          Evidence-led guidance on dog DNA tests — breed, health, traits, and what actually matters.
+          Evidence-led guidance on pet DNA tests — dogs, cats, breed, health, and what results mean.
         </div>
       </div>
       <div class="trust-tags">
@@ -182,34 +184,34 @@
       <section class="hero" aria-labelledby="hero-heading">
         <div>
           <h1 id="hero-heading" class="hero-title">
-            Choose the right dog DNA test — without guessing.
+            Pet DNA tests: breed, health screening, and practical decisions.
           </h1>
 
           <p class="hero-subtitle">
-            Dog DNA tests can answer two very different questions: <strong>breed mix</strong> and
-            <strong>health risk / carrier status</strong>. The best test depends on which question you care about.
-            DogDNA.bio makes the trade-offs obvious.
+            Pet DNA testing is not one category. Dog DNA tests are often about <strong>breed + health panels</strong>,
+            while cat DNA tests are usually more about <strong>breed ancestry + select genetic risks</strong>.
+            PetDNA.bio helps you choose the right lane before you buy.
           </p>
 
           <ul class="hero-list">
-            <li>Breed ID: how much of your dog’s mix can the test actually resolve?</li>
-            <li>Health: does it screen meaningful conditions, or mostly trivia traits?</li>
-            <li>Value: what you get in the base kit vs. upsells and subscriptions.</li>
+            <li>Pick the right test for your goal (breed curiosity vs. health screening).</li>
+            <li>Understand why results can change as databases improve.</li>
+            <li>Avoid paying for features that don’t match your situation.</li>
           </ul>
 
           <div class="hero-highlight">
-            Practical rule: If you mainly want <strong>health screening</strong>, pick a test with broad,
-            well-documented condition coverage. If you mainly want <strong>breed curiosity</strong>, prioritize
-            database size and ancestry resolution.
+            Practical rule: If you have a mixed-breed rescue dog and want usefulness, start with a
+            <strong>breed + health</strong> kit. If you have a cat, focus on <strong>confirmed breed ancestry</strong>
+            and clearly explained genetic findings.
           </div>
 
           <div class="hero-actions">
-            <a href="#compare" class="btn-primary">
-              Compare top dog DNA tests
+            <a href="#paths" class="btn-primary">
+              Choose your path
               <span class="chevron">›</span>
             </a>
             <a href="/guide.html" class="btn-secondary">
-              Read: privacy & sample handling
+              Read: privacy & limitations
             </a>
           </div>
         </div>
@@ -217,221 +219,220 @@
         <aside class="hero-aside">
           <div class="rating-pill">
             <span class="star">★</span>
-            Most common: <strong>mixed-breed rescue dogs</strong>
+            Most common: <strong>mixed-breed dogs</strong>
           </div>
           <p class="hero-note">
-            If your dog is a mixed breed, you’ll usually get the most value from a test that combines
-            solid breed detection with a meaningful health panel.
+            Dog testing typically has stronger consumer ecosystems and broader panels.
+            Cat testing is improving, but options can be narrower depending on region.
           </p>
         </aside>
       </section>
 
-      <!-- QUICK DECISION CARD -->
-      <section class="card" aria-labelledby="quick-heading">
-        <h2 id="quick-heading" class="section-title">Quick decision: what do you want to learn?</h2>
+      <!-- PATHS -->
+      <section id="paths" class="card" aria-labelledby="paths-heading">
+        <h2 id="paths-heading" class="section-title">Pick your path</h2>
         <p class="section-subtitle">
-          Don’t start with brand names. Start with your primary goal:
+          Start with your animal and your primary goal. We keep this simple on purpose.
         </p>
+
         <div class="grid">
           <article class="card">
-            <h3>Goal A: “What breeds is my dog?”</h3>
+            <h2>Dog DNA (higher demand)</h2>
             <p>
-              Prioritize ancestry resolution, reference database size, and how the company handles
-              mixed breed segmentation (especially 10–25% “chunks”).
+              Dog DNA has higher search demand and usually better “breed + health” coverage.
+              If you’re here for dog DNA testing, go straight to our focused site:
             </p>
+            <a href="https://dogdna.bio/" class="btn-primary" rel="noopener">
+              Visit DogDNA.bio ›
+            </a>
           </article>
+
           <article class="card">
-            <h3>Goal B: “Is my dog at risk for genetic disease?”</h3>
+            <h2>Cat DNA (breed + genetic findings)</h2>
             <p>
-              Prioritize breadth and quality of the health panel, clear reporting,
-              and whether the test covers actionable conditions.
+              Cat DNA tests are commonly used for breed ancestry confirmation and selected genetic risks.
+              Use the comparison below to understand what’s realistic and what’s marketing.
             </p>
+            <a href="#cat" class="btn-primary">
+              Read cat DNA overview ›
+            </a>
           </article>
+
           <article class="card">
-            <h3>Goal C: “Both (breed + health)”</h3>
+            <h2>General pet DNA questions</h2>
             <p>
-              Usually the best default for first-time buyers. It reduces regret because you
-              get a breed story plus a practical health overview.
+              If your main concern is sample handling, privacy, data retention, or understanding how results are computed,
+              our guide is the best place to start.
             </p>
+            <a href="/guide.html" class="btn-primary">
+              Read the guide ›
+            </a>
           </article>
         </div>
       </section>
 
-      <!-- COMPARISON TABLE -->
-      <section id="compare" aria-labelledby="compare-heading">
-        <h2 id="compare-heading" class="section-title">Top dog DNA tests in 2025 — side by side</h2>
+      <!-- DOG SUMMARY -->
+      <section id="dog" class="card" aria-labelledby="dog-heading">
+        <h2 id="dog-heading" class="section-title">Dog DNA tests: what matters most</h2>
         <p class="section-subtitle">
-          Ratings below are editorial and relative (to highlight trade-offs). “Best for” is the key field.
-          When your affiliate programs are approved, you can swap “View offer” with your tracking links.
+          Dog DNA tests are typically strongest when they combine useful breed resolution with meaningful health screening.
+          The “best” test is the one that matches your goal.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Breed detail</h3>
+            <p>
+              Mixed-breed breakdown depends heavily on reference database size and model quality.
+              Small breed fragments are less stable.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Health screening</h3>
+            <p>
+              Health panels can identify risk markers and carrier status. Confirm clinically important findings with a veterinarian.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Value & upsells</h3>
+            <p>
+              Compare what’s included in the base kit, how results are delivered, and whether add-ons are actually needed.
+            </p>
+          </article>
+        </div>
+
+        <p class="section-subtitle" style="margin-top:12px;">
+          For dog DNA comparisons and first-time buyer guidance, see <a href="https://dogdna.bio/" rel="noopener">DogDNA.bio</a>.
+        </p>
+      </section>
+
+      <!-- CAT OVERVIEW -->
+      <section id="cat" class="card" aria-labelledby="cat-heading">
+        <h2 id="cat-heading" class="section-title">Cat DNA tests: what to expect</h2>
+        <p class="section-subtitle">
+          Cat DNA testing is commonly used to confirm breed ancestry and highlight selected genetic findings.
+          Compared to dogs, consumer options can be more limited, and results may be less granular for mixed cats.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Breed confirmation</h3>
+            <p>
+              Best for verifying breed claims or understanding lineage for pedigree cats.
+              Mixed cats often get broader grouping rather than precise percentages.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Genetic findings</h3>
+            <p>
+              Some providers report markers linked to disease risk. Treat results as informational and discuss concerns with a vet.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Practical value</h3>
+            <p>
+              The best value is usually education: understanding what results mean and how to avoid overinterpreting them.
+            </p>
+          </article>
+        </div>
+
+        <p class="inline-note">
+          If you later want a dedicated cat site, we can spin up CatDNA.bio style content under your network approach.
+        </p>
+      </section>
+
+      <!-- SIMPLE COMPARISON TABLE (GENERIC PLACEHOLDERS) -->
+      <section id="compare" aria-labelledby="compare-heading">
+        <h2 id="compare-heading" class="section-title">Pet DNA test comparison (high level)</h2>
+        <p class="section-subtitle">
+          This is a simplified comparison to clarify the lanes. Replace “View offer” with affiliate links once your programs are approved.
         </p>
 
         <div class="table-wrapper">
           <table>
             <thead>
               <tr>
-                <th scope="col">Shop</th>
-                <th scope="col">Dog DNA test</th>
+                <th scope="col">Category</th>
                 <th scope="col">Best for</th>
-                <th scope="col">Breed detail</th>
-                <th scope="col">Health screening</th>
-                <th scope="col">Traits</th>
-                <th scope="col">Value</th>
+                <th scope="col">What you usually get</th>
+                <th scope="col">Common pitfalls</th>
               </tr>
             </thead>
             <tbody>
-
-              <tr id="embark">
-                <td class="buy-col">
-                  <a href="#" class="btn-compare" rel="nofollow noopener">View offer</a>
-                </td>
-                <td class="brand-col">
-                  Embark (Breed + Health)
-                  <div class="badge-top">Best “all-round”</div>
-                </td>
-                <td><span class="pill-skin">Breed + meaningful health panel</span></td>
-                <td>
-                  <div class="stars">★★★★★</div>
-                  <div class="rating-score">Strong mixed-breed resolution and reporting.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★★★</div>
-                  <div class="rating-score">Broad health screening; good for first-time buyers.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★★☆</div>
-                  <div class="rating-score">Useful traits, but not the main reason to buy.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★★☆</div>
-                  <div class="rating-score">Higher price, but often worth it if you want health too.</div>
-                </td>
+              <tr>
+                <td><strong>Dog: Breed + Health</strong></td>
+                <td>First-time buyers who want usefulness</td>
+                <td>Breed mix + health risk markers + traits</td>
+                <td>Overinterpreting “risk” as diagnosis</td>
               </tr>
-
-              <tr id="wisdom">
-                <td class="buy-col">
-                  <a href="#" class="btn-compare" rel="nofollow noopener">View offer</a>
-                </td>
-                <td class="brand-col">
-                  Wisdom Panel
-                  <div class="badge-top">Best value</div>
-                </td>
-                <td><span class="pill-skin">Budget-friendly breed + some health</span></td>
-                <td>
-                  <div class="stars">★★★★☆</div>
-                  <div class="rating-score">Strong breed story; can be slightly less granular.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★★☆</div>
-                  <div class="rating-score">Good coverage, depends on kit level.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★★☆</div>
-                  <div class="rating-score">Fun and informative traits.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★★★</div>
-                  <div class="rating-score">Often discounted; very strong for price.</div>
-                </td>
+              <tr>
+                <td><strong>Dog: Breed-only</strong></td>
+                <td>Curiosity and quick overview</td>
+                <td>Breed breakdown + traits</td>
+                <td>Regretting no health screening later</td>
               </tr>
-
-              <tr id="ancestrydog">
-                <td class="buy-col">
-                  <a href="#" class="btn-compare" rel="nofollow noopener">View offer</a>
-                </td>
-                <td class="brand-col">
-                  Ancestry Dog DNA
-                  <div class="badge-top">For breed curiosity</div>
-                </td>
-                <td><span class="pill-skin">Breed mix + family-tree style UX</span></td>
-                <td>
-                  <div class="stars">★★★☆☆</div>
-                  <div class="rating-score">Fine for broad mixes; less about medical depth.</div>
-                </td>
-                <td>
-                  <div class="stars">★★☆☆☆</div>
-                  <div class="rating-score">Not the first choice for serious health screening.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★☆☆</div>
-                  <div class="rating-score">Traits can be entertaining; varies by kit.</div>
-                </td>
-                <td>
-                  <div class="stars">★★★★☆</div>
-                  <div class="rating-score">Good if discounted and you want simple breed results.</div>
-                </td>
+              <tr>
+                <td><strong>Cat: Breed + Findings</strong></td>
+                <td>Pedigree lineage and selected genetic markers</td>
+                <td>Breed confirmation + limited health markers</td>
+                <td>Expecting dog-level granularity</td>
               </tr>
-
             </tbody>
           </table>
         </div>
-
-        <p class="section-subtitle">
-          Tip: If your main concern is a known breed-linked condition (e.g., MDR1 sensitivity, DCM markers, etc.),
-          choose a health-first kit and confirm anything serious with your veterinarian.
-        </p>
       </section>
 
       <!-- GUIDE CARDS -->
-      <section class="grid" aria-label="Guides to dog DNA testing">
+      <section class="grid" aria-label="Guides to pet DNA testing">
         <article class="card">
-          <h2>What dog DNA tests can and cannot do</h2>
+          <h2>Privacy & sample handling</h2>
           <p>
-            Breed estimates are probabilistic and can change as reference databases grow.
-            Health screening can identify risk markers — but it does not replace clinical diagnosis.
+            Before sending biological material, understand data retention, deletion options,
+            and whether research sharing is opt-in.
           </p>
           <a href="/guide.html" class="btn-primary">Read the guide ›</a>
         </article>
 
         <article class="card">
-          <h2>Have an unknown mixed breed?</h2>
+          <h2>Dog DNA has the best ROI (attention)</h2>
           <p>
-            The most common mistake is buying a cheap “breed-only” test and later regretting
-            that you didn’t get health screening included.
+            If you’re building the network for traffic and affiliate conversion, dog DNA is typically the highest-demand segment.
           </p>
-          <a href="#compare" class="btn-primary">Compare tests ›</a>
+          <a href="https://dogdna.bio/" class="btn-primary" rel="noopener">Go to DogDNA.bio ›</a>
         </article>
       </section>
 
       <!-- MINI FAQ -->
       <section class="card faq" aria-labelledby="faq-heading" style="margin-top: 24px;">
-        <h2 id="faq-heading" class="section-title">Dog DNA test FAQ</h2>
+        <h2 id="faq-heading" class="section-title">Pet DNA FAQ</h2>
 
-        <h3>Are dog DNA tests accurate?</h3>
+        <h3>Are pet DNA tests “accurate”?</h3>
         <p>
-          For common breeds and typical mixed-breed compositions, results can be very useful.
-          Accuracy drops for rare breeds, small breed “fragments,” or when reference data is limited.
+          They can be useful, especially for common breeds and well-represented populations.
+          Accuracy is not a single number; it depends on reference databases and how mixed the animal is.
         </p>
 
-        <h3>Will the result change over time?</h3>
+        <h3>Will results change over time?</h3>
         <p>
-          Yes, it can. As databases and models improve, companies may update breed percentages and
-          trait interpretations.
+          Yes. As databases and models improve, breed estimates and interpretations can be updated.
         </p>
 
-        <h3>Do I need a health panel?</h3>
+        <h3>Do pet DNA tests replace a vet?</h3>
         <p>
-          If your dog is a mixed breed (especially from rescue) or you want peace-of-mind about inherited risk,
-          a health panel is usually worth it.
+          No. Health-related findings are informational and should be interpreted with a licensed veterinarian,
+          especially if symptoms are present.
         </p>
       </section>
 
       <!-- DISCLAIMER -->
       <section class="disclaimer">
         <p>
-          DogDNA.bio does not provide veterinary or medical advice. This site is for informational purposes only.
-          Always discuss health decisions with a licensed veterinarian.
+          PetDNA.bio does not provide veterinary advice. This site is informational only.
+          For health concerns, consult a licensed veterinarian.
         </p>
         <p>
-          This website may be reader-supported. If you buy via links on this site in the future, we may earn a commission.
+          This website may be reader-supported. If you buy products via links on this site in the future, we may earn a commission.
           We do not accept payment for positive reviews or rankings.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Pet DNA (dogs + cats) instead?</h2>
-        <p>
-          If you want a broader overview that includes cats and general pet DNA, see our companion site:
-          <a href="https://petdna.bio/" rel="noopener">PetDNA.bio</a>.
         </p>
       </section>
 
@@ -474,7 +475,6 @@
         </span>
       </nav>
     </footer>
-
   </div>
 
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
